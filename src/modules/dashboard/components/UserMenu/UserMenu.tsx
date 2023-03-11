@@ -19,7 +19,7 @@ export default function UserMenu() {
   return (
     <Box mb={2}>
       <Button variant="link" size="xs" ref={buttonRef} onClick={onOpen}>
-        <HamburgerIcon fontSize="lg" />
+        <HamburgerIcon fontSize="2xl" />
       </Button>
 
       <Drawer placement="left" isOpen={isOpen} onClose={onClose} finalFocusRef={buttonRef}>
@@ -36,7 +36,7 @@ export default function UserMenu() {
             <UserMenuLink to="/#inicio">Inicio</UserMenuLink>
             <UserMenuLink to="/#pedidos">Mis pedidos</UserMenuLink>
             <UserMenuLink to="/#fav">Mis favoritos</UserMenuLink>
-            <UserMenuLink to="/#profile">Mi Perfil</UserMenuLink>
+            <UserMenuLink to="/profile">Mi Perfil</UserMenuLink>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
