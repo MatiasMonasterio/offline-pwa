@@ -4,10 +4,13 @@ import { Heading, Flex, Text, Box } from "@chakra-ui/react";
 import { GoBackRow } from "components";
 
 import { LoginForm } from "@/authenticate/components";
+import { useAuthenticateContext } from "@/authenticate/hooks";
 
 export default function Email() {
+  const { loginUser } = useAuthenticateContext();
+
   const handleLogin = (loginForm: LoginEmailForm) => {
-    console.log(loginForm);
+    loginUser(loginForm);
   };
 
   return (
