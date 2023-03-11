@@ -14,7 +14,7 @@ export default function GoBackRow({ title }: Props) {
   };
 
   return (
-    <Box display="flex" alignItems="center" mb={2} position="relative">
+    <Box display="flex" alignItems="center" mb={2} position="relative" minH="48px">
       <Button
         size="xs"
         onClick={handleGoBack}
@@ -23,7 +23,7 @@ export default function GoBackRow({ title }: Props) {
         position="absolute"
         left={0}
       >
-        <ChevronLeftIcon />
+        <ChevronLeftIcon fontSize="5xl" />
       </Button>
 
       <Heading size="md" mx="auto">
